@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="heading">Hello, World!</h1>
+    <p id="text">위 텍스트를 클릭해 보세요</p>
+
+    <!-- 자바스크립트는 웹 문서에서 이미지나 텍스트 등의 요소를 제어하는 경우가 많으므로,
+     되도록 이미지나 텍스트 등을 다 표시한 후 실행. body 태그 직전에 코드 삽입 -->
+    <!-- 영어 대소문자 구별(예 : sum, Sum, SUM) -->
+
+<script>
+    <!-- TODO : 클릭하면 글자 색상 바꾸기 -->
+    let heading = document.querySelector('#heading');
+    heading.onclick = function() {
+        heading.style.color = "red";
+    }
+</script>
+
+    <!-- TODO : 외부 스크립트 파일 연결 (기본형) -->
+    <!-- TODOE : <script src="외부 스크립트 파일 경로"></script> -->
+<script src="script-1.js"></script>
+
+
+<!-- <script>
+    let reply = confirm("정말 배경 이미지를 바꾸겠습니까?);
+
+    let name = prompt("이름을 입력하세요", "아무개");
+    var name = prompt("이름을 입력하세요");
+
+    document.write("<h1>어서오세요</h1>")
+    let name = prompt('이름을 입력하세요');
+	document.write('<b><big>' + name + '</big></b>님, 환영합니다');
+    
+	let name = prompt('이름을 입력하세요');
+	document.write('<b><big>' + name + '</big></b>님, 환영합니다');
+</script> -->
+
+<script>
+	let name = prompt('안녕하세요');
+	console.log(name + '님, 안녕하세요');
+</script>
+</body>
+</html>
